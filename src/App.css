@@ -1,20 +1,30 @@
 body {
-  font-family: Arial, sans-serif;
+  background-color: #0D1217; 
+  color: #DFE5EC; /* white text by default */
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
-.page {
-  margin-left: 500px;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  color: #eef2f4;
-  background-color: #145ce3;
   border-radius:4px;
+  border: 1px solid #212D3B; /** Need to define width, style (solid) and color to be able to see the border*/
 }
 
 .btc-card {
   display: flex;
+}
+
+.btc-card .card-body{
+  margin-left: -20px;
+  margin-right: 20px;
 }
 
 .others-card {
@@ -25,4 +35,13 @@ body {
 
 .others-card > div { /** top, right, bottom, left*/
   margin-right: 20px;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: 600;
+}
+
+.card-body {
+  text-align: center;
 }
